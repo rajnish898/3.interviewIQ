@@ -1,15 +1,21 @@
 
-import { initializeApp } from "firebase/app";
 import {getAuth, GoogleAuthProvider} from "firebase/auth"
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_FIREBASE_APIKEY,
-  authDomain: "interviewiq-ba6ba.firebaseapp.com",
-  projectId: "interviewiq-ba6ba",
-  storageBucket: "interviewiq-ba6ba.firebasestorage.app",
-  messagingSenderId: "862159592601",
-  appId: "1:862159592601:web:7308d702cd708076ddec08"
+  apiKey: "AIzaSyDrBrMPb5ZbgB7-pLAC6nAb492DJYZrWWc",
+  authDomain: "interviewiq-2e139.firebaseapp.com",
+  projectId: "interviewiq-2e139",
+  storageBucket: "interviewiq-2e139.firebasestorage.app",
+  messagingSenderId: "561210279556",
+  appId: "1:561210279556:web:0623c48707ab35e189e4d1"
 };
 
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
 const auth = getAuth(app);
